@@ -1,13 +1,10 @@
 /*! normalize.css v1.0.1 | MIT License | git.io/normalize */
-
 /* ==========================================================================
    HTML5 display definitions
    ========================================================================== */
-
 /*
  * Corrects `block` display not defined in IE 6/7/8/9 and Firefox 3.
  */
-
 article,
 aside,
 details,
@@ -25,7 +22,6 @@ summary {
 /*
  * Corrects `inline-block` display not defined in IE 6/7/8/9 and Firefox 3.
  */
-
 audio,
 canvas,
 video {
@@ -38,7 +34,6 @@ video {
  * Prevents modern browsers from displaying `audio` without controls.
  * Remove excess height in iOS 5 devices.
  */
-
 audio:not([controls]) {
     display: none;
     height: 0;
@@ -49,7 +44,6 @@ audio:not([controls]) {
  * and Safari 4.
  * Known issue: no IE 6 support.
  */
-
 [hidden] {
     display: none;
 }
@@ -57,14 +51,12 @@ audio:not([controls]) {
 /* ==========================================================================
    Base
    ========================================================================== */
-
 /*
  * 1. Corrects text resizing oddly in IE 6/7 when body `font-size` is set using
  *    `em` units.
  * 2. Prevents iOS text size adjust after orientation change, without disabling
  *    user zoom.
  */
-
 html {
     font-size: 100%; /* 1 */
     -webkit-text-size-adjust: 100%; /* 2 */
@@ -75,7 +67,6 @@ html {
  * Addresses `font-family` inconsistency between `textarea` and other form
  * elements.
  */
-
 html,
 button,
 input,
@@ -87,7 +78,6 @@ textarea {
 /*
  * Addresses margins handled incorrectly in IE 6/7.
  */
-
 body {
     margin: 0;
 }
@@ -95,11 +85,9 @@ body {
 /* ==========================================================================
    Links
    ========================================================================== */
-
 /*
  * Addresses `outline` inconsistency between Chrome and other browsers.
  */
-
 a:focus {
     outline: thin dotted;
 }
@@ -107,7 +95,6 @@ a:focus {
 /*
  * Improves readability when focused and also mouse hovered in all browsers.
  */
-
 a:active,
 a:hover {
     outline: 0;
@@ -116,38 +103,31 @@ a:hover {
 /* ==========================================================================
    Typography
    ========================================================================== */
-
 /*
  * Addresses font sizes and margins set differently in IE 6/7.
  * Addresses font sizes within `section` and `article` in Firefox 4+, Safari 5,
  * and Chrome.
  */
-
 h1 {
     font-size: 2em;
     margin: 0.67em 0;
 }
-
 h2 {
     font-size: 1.5em;
     margin: 0.83em 0;
 }
-
 h3 {
     font-size: 1.17em;
     margin: 1em 0;
 }
-
 h4 {
     font-size: 1em;
     margin: 1.33em 0;
 }
-
 h5 {
     font-size: 0.83em;
     margin: 1.67em 0;
 }
-
 h6 {
     font-size: 0.75em;
     margin: 2.33em 0;
@@ -156,7 +136,6 @@ h6 {
 /*
  * Addresses styling not present in IE 7/8/9, Safari 5, and Chrome.
  */
-
 abbr[title] {
     border-bottom: 1px dotted;
 }
@@ -164,12 +143,10 @@ abbr[title] {
 /*
  * Addresses style set to `bolder` in Firefox 3+, Safari 4/5, and Chrome.
  */
-
 b,
 strong {
     font-weight: bold;
 }
-
 blockquote {
     margin: 1em 40px;
 }
@@ -177,7 +154,6 @@ blockquote {
 /*
  * Addresses styling not present in Safari 5 and Chrome.
  */
-
 dfn {
     font-style: italic;
 }
@@ -185,7 +161,6 @@ dfn {
 /*
  * Addresses styling not present in IE 6/7/8/9.
  */
-
 mark {
     background: #ff0;
     color: #000;
@@ -194,7 +169,6 @@ mark {
 /*
  * Addresses margins set differently in IE 6/7.
  */
-
 p,
 pre {
     margin: 1em 0;
@@ -203,7 +177,6 @@ pre {
 /*
  * Corrects font family set oddly in IE 6, Safari 4/5, and Chrome.
  */
-
 code,
 kbd,
 pre,
@@ -501,4 +474,150 @@ textarea {
 table {
     border-collapse: collapse;
     border-spacing: 0;
+}
+
+/* ==========================================================================================
+   ==========================================================================================
+   ==========================================================================================
+   ==========================================================================================
+   ==========================================================================================
+*/
+
+/*
+  Forces backgrounds to span full width,
+  even if there is horizontal scrolling.
+  Increase this if your layout is wider.
+  Note: IE6 works fine without this fix.
+*/
+body {
+  min-width: 960px;
+}
+
+/* Containers
+----------------------------------------------------------------------------------------------------*/
+.container_12 {
+	margin-left: auto;
+	margin-right: auto;
+	width: 960px;
+}
+
+/* Grid >> Global
+----------------------------------------------------------------------------------------------------*/
+.grid_1,
+.grid_2,
+.grid_3,
+.grid_4,
+.grid_5,
+.grid_6,
+.grid_7,
+.grid_8,
+.grid_9,
+.grid_10,
+.grid_11,
+.grid_12 {
+	display:inline;
+	float: left;
+	position: relative;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.push_1, .pull_1,
+.push_2, .pull_2,
+.push_3, .pull_3,
+.push_4, .pull_4,
+.push_5, .pull_5,
+.push_6, .pull_6,
+.push_7, .pull_7,
+.push_8, .pull_8,
+.push_9, .pull_9,
+.push_10, .pull_10,
+.push_11, .pull_11,
+.push_12, .pull_12 {
+	position:relative;
+}
+
+
+/* Grid >> Children (Alpha ~ First, Omega ~ Last)
+----------------------------------------------------------------------------------------------------*/
+.alpha {
+	margin-left: 0;
+}
+.omega {
+	margin-right: 0;
+}
+
+/* Grid >> 12 Columns
+----------------------------------------------------------------------------------------------------*/
+.container_12 .grid_1 {
+	width:60px;
+}
+.container_12 .grid_2 {
+	width:140px;
+}
+.container_12 .grid_3 {
+	width:220px;
+}
+.container_12 .grid_4 {
+	width:300px;
+}
+.container_12 .grid_5 {
+	width:380px;
+}
+.container_12 .grid_6 {
+	width:460px;
+}
+.container_12 .grid_7 {
+	width:540px;
+}
+.container_12 .grid_8 {
+	width:620px;
+}
+.container_12 .grid_9 {
+	width:700px;
+}
+.container_12 .grid_10 {
+	width:780px;
+}
+.container_12 .grid_11 {
+	width:860px;
+}
+.container_12 .grid_12 {
+	width:940px;
+}
+
+
+/* `Clear Floated Elements
+----------------------------------------------------------------------------------------------------*/
+/* http://sonspring.com/journal/clearing-floats */
+.clear {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+/* http://www.yuiblog.com/blog/2010/09/27/clearfix-reloaded-overflowhidden-demystified */
+.clearfix:before,
+.clearfix:after {
+  content: '\0020';
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+/*
+  The following zoom:1 rule is specifically for IE6 + IE7.
+  Move to separate stylesheet if invalid CSS is a problem.
+*/
+.clearfix {
+  zoom: 1;
 }

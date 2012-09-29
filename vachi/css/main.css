@@ -1,0 +1,44 @@
+header{
+    background-color: red;
+    height: 60px;    
+}
+
+
+#canvas{    
+    position: relative;
+    height: 500px;
+    float: left;
+    width: 940px;
+}
+#canvas ul{
+    padding: 0px;
+    margin: 0px;
+}
+
+#canvas ul li{
+    height: 500px;
+    position: absolute;
+    top: 20px;    
+}
+
+#slider1{
+    background: url(../img/slider1.jpg) center center;
+}
+
+#slider2{
+    background: url(../img/slider2.jpg) center center;
+}
+
+section{
+    background: #ffffff;
+    opacity: .5;
+    position:absolute;
+    top: 200px;
+    padding: 10px;
+}
+
+
+footer{
+    background-color: yellow; 
+}
+

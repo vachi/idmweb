@@ -1,0 +1,12 @@
+header{
+    background-color: red;
+    height: 60px;    
+}
+
+#canvas{
+    background-color: green;    
+}
+
+footer{
+    background-color: blue; 
+}

@@ -60,11 +60,18 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+header{
+    background-color: red;
 
 
+}
 
-
-
+#canvas{
+background-color: blue; 
+}
+footer{
+    background-color: yellow;
+}
 
 
 

@@ -1,41 +1,88 @@
 /* ==========================================================================
-   HTML5 Boilerplate styles - h5bp.com (generated via initializr.com)
-   ========================================================================== */
+	 HTML5 Boilerplate styles - h5bp.com (generated via initializr.com)
+	 ========================================================================== */
 
 hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
+		display: block;
+		height: 1px;
+		border: 0;
+		border-top: 1px solid #ccc;
+		margin: 1em 0;
+		padding: 0;
 }
 
 img {
-    vertical-align: middle;
+		vertical-align: middle;
 }
 
 fieldset {
-    border: 0;
-    margin: 0;
-    padding: 0;
+		border: 0;
+		margin: 0;
+		padding: 0;
 }
 
 textarea {
-    resize: vertical;
+		resize: vertical;
 }
 
 /* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
+	 Author's custom styles
+	 ========================================================================== */
 
-
-header > ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
+body {
+	background: #f9f9f9 url('http://subtlepatterns.com/patterns/crisp_paper_ruffles.png');
 }
 
-header > ul > li {
-  display: inline-block;
+
+
+/* Canvas */
+#canvas {
+	height: 350px;
+}
+
+.slider {
+	display: none;
+	position: absolute;
+}
+.active {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+#slider1 {
+	background: url('../img/wallpaper1.jpg') center center;
+}
+#slider2 {
+	background: url('../img/wallpaper2.jpg') center center;
+}
+
+/* Header and footer */
+#canvas ul,
+header > ul,
+footer > ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+header > ul > li,
+footer > ul > li {
+	display: inline-block;
+}
+header > ul > li a,
+footer > ul > li a {
+	text-decoration: none;
+}
+
+/* Header */
+#logo a {
+	color: #294785;
+	font-size: 3.5em;
+	font-family: 'Open Sans';
+	font-weight: 300;
+}
+
+/* Footer */
+footer {
 }
